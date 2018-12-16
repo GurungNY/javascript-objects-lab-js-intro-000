@@ -5,8 +5,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return Object.assign({}, object, {[key]:value})
 }
 
-function undateObjectWithKeyAndValue(object, key, value ) {
-  object[key] = value
 
-  return
+
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  mew_object = Object.assign({}, key, value)
+  
+
+  return new_object
 }
