@@ -8,8 +8,8 @@ function updateObjectWithKeyAndValue(object, key, value) {
 
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-  mew_object = Object.assign({}, key, value)
+  value[key] = object
 
 
-  return new_object
+  return object
 }
